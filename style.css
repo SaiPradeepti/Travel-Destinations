@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Poly:ital@1&family=Teko:wght@700&display=swap" rel="stylesheet');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.content-text-container {
+  width: 70%;
+  height: 100%;
+  color: white;
+  display: flex;
+}
+
+.content-text-container1 {
+  background: #009cbb;
+}
+
+.content-text-container2 {
+  background: #000;
+}
+
+.content-text-container3 {
+  background: #4fb4fc;
+}
+
+.content-text-container4 {
+  background: #ef2a00;
+}
+
+.content-text-container5 {
+  background: #7a5c75;
+}
+
+.content-text-container6 {
+  background: #1c5b84;
+}
+
+.content-text-container7 {
+  background: #ad2d2a;
+}
+
+.content-text {
+  align-self: center;
+  padding: 4em;
+  font-family: "Poly", serif;
+  font-size: 1.5em;
+}
+
+.content-img {
+  height: 100%;
+  width: 50%;
+  position: relative;
+}
+
+.img-content {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.img-content p:nth-child(1) {
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.6em;
+  font-family: "Teko", sans-serif;
+}
+
+.img-content p:nth-child(2) {
+  padding-top: 0.5em;
+  font-family: "Aclonica", sans-serif;
+  font-size: 4em;
+}
+img {
+  display: none;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .content-text {
+    font-size: 1.2em;
+    padding: 1.5em;
+  }
+  .img-content p:nth-child(1) {
+    font-size: 1.7em;
+    letter-spacing: 0.4em;
+  }
+
+  .img-content p:nth-child(2) {
+    padding-top: 0.5em;
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 700px) {
+  section {
+    height: 200vh;
+    flex-direction: column;
+  }
+  .content-img {
+    width: 100%;
+    order: 0;
+  }
+  .content-img canvas {
+    height: 100%;
+  }
+  .content-text-container {
+    order: 1;
+    width: 100%;
+  }
+  .content-text {
+    padding: 0.7em;
+    font-size: 1.2em;
+  }
+}
